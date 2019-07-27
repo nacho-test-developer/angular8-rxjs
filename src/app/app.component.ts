@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
-export class AppComponent  {
-  name = 'Angular';
+export class AppComponent implements OnInit  {
+
+  public name = 'Angular';
+  public total: number;
+
+  constructor() { }
+
+  ngOnInit() {
+    this.total = 0
+  }
+
+  counter(e) {
+    // devolverá el valor recibido desde subscribed
+    this.total = e;
+  }
 }

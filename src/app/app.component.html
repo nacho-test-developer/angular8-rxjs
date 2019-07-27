@@ -1,4 +1,17 @@
 <hello name="{{ name }}"></hello>
+
+<h3>Event Emitter</h3>
 <p>
-  Start editing to see some magic happen :)
+  Counter: <strong>{{ total }}</strong>
 </p>
+
+<!-- va a escuchar el evento subscribed -->
+<!-- y ejecutará la función emitted() -->
+<app-event-emitter (subscribed)="counter($event)">
+  <p>From app-event-emitter</p>
+</app-event-emitter>
+
+<hr />
+
+<h3>Reference variable</h3>
+<app-reference-variable></app-reference-variable>

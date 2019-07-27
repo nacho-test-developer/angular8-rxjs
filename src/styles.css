@@ -1,1 +1,8 @@
 /* Add application styles & imports to this file! */
+:root {
+  --spacing: 200px;
+}
+
+.mb {
+  margin-bottom: var(--spacing);
+}
