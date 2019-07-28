@@ -15,8 +15,7 @@ export class ListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.result = this._list.getApi()
-    console.log('aaa' + this.result)
+    this._list.getApi();
   }
 
 }
