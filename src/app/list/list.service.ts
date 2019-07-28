@@ -12,7 +12,11 @@ export class ListService {
     const URI = "https://jsonplaceholder.typicode.com/";
 
     this._http.get(`${URI}todos/1`).subscribe(
-      data => {console.log(data)}
+      data => {
+        let res = data
+        return res
+        //console.log(res)
+      }
     )
   }
 
